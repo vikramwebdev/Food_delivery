@@ -1,0 +1,222 @@
+/*CSS Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    /*background-color: black;*/
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ /*CSS Variables*/
+ /*:root{*/
+ /*   --navbar-height: 59px;*/
+ /*}*/
+ 
+ /*Navigation Bar Beautify*/
+ #navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+ }
+    /*Navigation Bar: Logo and Images*/
+    #logo{
+       margin: 10px 34px;
+    }
+    #logo img{
+       height: 57px;
+       margin: 4px 7px;
+    }
+    /*Navigation Bar: List Styling*/
+ #navbar ul{
+    display: flex;
+ }
+ #navbar::before{
+    content: "";
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.9;
+ }
+ #navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+ }
+ #navbar ul li a{
+    display: bolck;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 18px;
+    text-decoration: none;
+    
+ }
+ #navbar ul li a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+ }
+ 
+ /*Home Section*/
+ #home{
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+ }
+ #home::before{
+    content: "";
+    top:0px;
+    left:0px;
+    height: 642px;
+    width: 100%;
+    position: absolute;
+    background-image: url('bg\ food.jpg');
+    /*background-color: #7e7055;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.89;
+ }
+ 
+ #home h1{
+    /*color: white;*/
+    text-align: center;
+    font-family: 'Bree Serif',serif, Sans-Serif;
+ }
+ #home p{
+    color: orange;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif',serif, Sans-Serif;
+ }
+  /*Services Section*/
+ #services{
+    margin: 15px;
+    display: flex;
+ }
+ #services .box{
+    /*height: 300px;*/
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 24px;
+    background-color: #f5f2f2;
+ }
+ #services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    
+ }
+ #services {}
+ 
+ /*Clients Section*/
+ #client-section{
+    position: relative;
+    /*height: 344px;*/
+ }
+ #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('clients.png');
+    width: 100%;
+    height: 54%;
+    /*background-color: orange;*/
+    z-index: -1;
+    opacity: 0.4;
+ }
+ #clients-item{
+    padding: 34px;
+ }
+ 
+ #clients img{
+    height: 120px;
+ }
+ /*Contact Section*/
+ #contact{
+    position: relative;
+ }
+ #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        background-image: url('restaurant-1724294__340.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+ }
+ #contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+ }
+ #contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+ }
+ #contact-box form{
+    width: 40%;
+ }
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: Sans-Serif;
+ }
+ 
+ footer{
+    background-color: black;
+    color: white;
+   padding: 9px 15px;
+ }
+ /*Utility Classes  */
+ .h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+ }
+ .h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+ }
+ .btn{
+    padding: 6px 23px;
+    margin: 17px;
+    font-size: 1.0rem;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+ }
+ .center{
+    text-align: center;
+ }
+ .button{
+   padding: 6px 23px;
+   margin: 10px;
+   font-size: 1.0rem;
+   font-weight:bold;
+   border: 2px solid rgb(51, 223, 8);
+   background-color: rgb(34, 17, 2);
+   border-radius: 10px;
+   color: rgb(30, 12, 224);
+   cursor: pointer;
+}
+
+
